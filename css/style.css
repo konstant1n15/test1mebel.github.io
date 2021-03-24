@@ -1,0 +1,408 @@
+html{
+  scroll-behavior: smooth;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.navigation-list {
+  color: rgb(51, 54, 226);
+  list-style: none;
+}
+.navigation {
+  list-style: none;
+  display: flex;
+  padding: 15px;
+  cursor: pointer;
+  font-family: 'PT Sans', sans-serif;
+
+}
+.navigation-nav {
+  background-color: rgba(0,0,0,0.70);
+  position: fixed;
+  width: 100%;
+
+  z-index: 70;
+
+}
+.navigation-ul {
+  color: white;
+  display: flex;
+  justify-content: center;
+}
+
+.navigation-subheader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 60px;
+  padding-bottom: 15px;
+  background-color: #e0d9d3;
+}
+.navigation-pic{
+  width: 100%;
+}
+.navigation-subheader__description{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.navigation-subheader__description__location{
+  display: flex;
+  padding-left: 50px
+}
+.link-container{
+  display: flex;
+  flex-direction: column;
+}
+.navigation-subheader__link{
+  display: flex;
+  flex-direction: column;
+}
+.logo{
+  max-width: 90px;
+}
+.logo__href{
+  display: block;
+}
+
+.wrapper {
+  width: 100%;
+  height: 100vh;
+  overflow: auto;
+}
+
+.content {
+  width: 100%;
+  height: 100%;
+  background-image: url(./img/bg3.jpg);;
+  background-attachment: fixed;
+  background-size: cover;
+  z-index: 12;
+}
+.content1,.content2,.content3 {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: bottom;
+  background-repeat: no-repeat;
+
+}
+.slider-container{
+  position: relative;
+  height: calc(100vh - 50px - 130px - 157px);
+  z-index: 12;
+
+}
+.slider-container:after{
+  content: "";
+  display: block;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgba(0,0,0,0.5);
+  z-index: -1;
+}
+
+.carousel-shadow{
+  max-width: 1280px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+}
+.carousel-title{
+  font-size:36px;
+  font-weight: normal;
+  color: #ffffff;
+}
+.carousel-link{
+  position: relative;
+  color: #ffffff;
+  font-size:24px;
+  font-weight: bold;
+  text-decoration: none;
+  margin-top: 40px;
+  display: inline-block;
+  width: fit-content;
+  padding: 20px 100px;
+  border: 2px solid rgba( 255,255,255,0.8);
+}
+
+.content2 {
+  background-image: url(./img/bg.jpg);
+}
+.content3 {
+  background-position: center;
+  background-image: url(./img/bg2.jpg);
+
+}
+.carousel-slide-1 {
+  background-image: url(Air_part5.webp);
+  height: 600px;
+
+  background-position: center;
+
+  position: relative;
+}
+
+.connection-pic1 {
+  width: 45px;
+  height: 45px;
+  float: left;
+  margin: 0px 0px 0px 30px;
+}
+.connection-tel{
+
+  color:#800000;
+  text-decoration: none;
+  border-bottom: 0px solid;
+  box-shadow: inset 0px -0px 0px 0px;
+  -webkit-box-shadow: inset 0px -0px 0px 0px;
+  -moz-box-shadow: inset 0px -0px 0px 0px;
+}
+.description-title1 {
+  text-align: center;
+  font-size: 40px;
+  font-family: 'Noto Sans JP', sans-serif;
+}
+.description-header {
+  padding-top: 45px;
+  padding-bottom: 75px;
+  background-color: rgb(235, 235, 235);
+}
+.description-title2{
+  font-size: 80px;
+  font-weight: bold;
+  text-align: center;
+  padding-top: 40px;
+  font-family: 'Noto Sans JP', sans-serif;
+}
+.description-title3 {
+  text-align: center;
+  font-size: 20px;
+  padding-top: 40px;
+  font-weight: bold;
+}
+.description-title4 {
+  text-align: center;
+  font-size: 20px;
+  font-weight: bold;
+}
+.description-title5 {
+  text-align: center;
+  font-size: 20px;
+  font-weight: bold;
+}
+.description-title6 {
+  text-align: center;
+  font-size: 20px;
+  font-weight: bold;
+}
+.image1 {
+  width: 100%;
+  height: 100vh;
+  overflow: auto;
+}
+.kontent0{
+  width: 100%;
+  height: 100%;
+  background-image: url(GiaRoom_0008.webp);
+  background-attachment: fixed;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  position: relative;
+}
+
+.kontent0::before {
+  position: absolute;
+  content: '';
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0,0,0, 0.5);
+}
+.kontent1 {
+  width: 100%;
+  height: 100%;
+  background-image: url(GiaRoom_0060.webp);
+  background-attachment: fixed;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  /*transition: 0.5;*/
+}
+.navigation:hover{
+  border: 2px solid #18cfab;
+  transition: 0.3s;
+}
+.kontent2 {
+  width: 100%;
+  height: 100%;
+  background-image: url(GiaRoom_0012.webp);
+  background-attachment: fixed;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+.kontent3 {
+  width: 100%;
+  height: 100%;
+  background-image: url(GiaRoom_0038.webp);
+  background-attachment: fixed;
+  background-size: cover;width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+.kontent-bed {
+  z-index: 1;
+  text-align: center;
+  font-weight: bold;
+  font-size: 100px;
+  margin-bottom: 110px;
+  border: 2px solid white;
+  color: white;
+  padding: 30px 70px;
+  background-attachment: fixed;
+  background-size: cover;
+  cursor: pointer;
+}
+.kontent-chairs {
+  text-align: center;
+  font-weight: bold;
+  font-size: 100px;
+  margin-bottom: 110px;
+  border: 2px solid white;
+  color: white;
+  padding: 30px 70px;
+  background-attachment: fixed;
+  background-size: cover;
+  cursor: pointer;
+  z-index: 1;
+}
+.kontent-sofa {
+  text-align: center;
+  font-weight: bold;
+  font-size: 100px;
+  margin-bottom: 110px;
+  border: 2px solid white;
+  color: white;
+  padding: 30px 70px;
+  background-attachment: fixed;
+  background-size: cover;
+  cursor: pointer;
+  z-index: 1;
+}
+.kontent-table {
+  text-align: center;
+  font-weight: bold;
+  font-size: 100px;
+  margin-bottom: 110px;
+  border: 2px solid white;
+  color: white;
+  padding: 30px 70px;
+  background-attachment: fixed;
+  background-size: cover;
+  cursor: pointer;
+  z-index: 1;
+}
+.top {
+  width: 50px;
+  height: 50px;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: black;
+  opacity: 0.5%;
+  color: #fff;
+  transition: opacity 0.5s ease-in-out;
+}
+.top::after {
+  position: absolute;
+  content: '';
+  width: 20px;
+  height: 20px;
+  border-top: 3px solid white;
+  border-right: 3px solid white;
+  transform: rotate(-45deg);
+  top: 20px;
+  left: 15px;
+}
+.module {
+  background-image: url(footer_bg.png);
+  height: 100vh;
+  background-repeat: no-repeat;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+.btn-push {
+
+}
+.moduli-description {
+  display: flex;
+  flex-direction: column;
+  background: #1c1c1c;
+  height: 40%;
+
+}
+.btn-text  {
+  height: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.moduli-description-title {
+  color: white;
+  font-size: 20px;
+  padding-top: 150px;
+}
+.modyle-description-text {
+  color: white;
+  font-size: 16px;
+}
+.telephone {
+  color: white;
+  padding-top: 120px;
+  font-size: 25px;
+}
+.navigation-subheader__link-more {
+  color: black;
+  text-decoration: none;
+}
+.title {
+  color: black;
+  text-decoration: none;
+}
+.description--bold{
+  color: black;
+  text-decoration: none;
+}
+.title--small {
+  font-weight: bold;
+  font-size: 20px;
+}
+.mail {
+  color: black;
+  text-decoration: none;
+}
+.btn-push {
+  background-color: #3d3d3d;
+  border: 1px solid gold;
+  color: white;
+  font-weight: bold;
+  padding: 15px 40px;
+  border-radius: 15px;
+  font-size: 20px;
+}
